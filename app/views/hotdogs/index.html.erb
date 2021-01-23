@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <h1>Selecciona tu salchicha</h1>
+
+  <% @hotdogs.each do |hotdog|  %>
+    <p>
+      <%= link_to hotdog.name, hotdog_path(hotdog) %>
+    </p>
+  <% end %>
+
+</div>
