@@ -9,6 +9,8 @@
 puts "Destroying database"
 Dressing.destroy_all
 Extra.destroy_all
+Agua.destroy_all
+Refresco.destroy_all
 Order.destroy_all
 Topping.destroy_all
 Pan.destroy_all
@@ -126,3 +128,15 @@ chimichurri = Extra.create!(
   name: "Chimichurri",
   price: 10
 )
+
+coca_cola = Refresco.create!(
+  name: "Coca Cola",
+  price: 20
+)
+
+agua_jamaica = Agua.create!(
+  name: "Agua de jamaica",
+  price: 15
+)
+
+

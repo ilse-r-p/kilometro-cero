@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :hotdogs, only: [:index, :show] do
-    resources :toppings, only: [:create]
-    resources :dressings, only: [:create]
-    resources :extras, only: [:create]
+    resources :toppings, only: [:index]
+    resources :dressings, only: [:index]
+    resources :extras, only: [:index]
+    resources :pans, only: [:index]
+    resources :refrescos, only: [:index]
+    resources :aguas, only: [:index]
   end
   resources :orders, only: [:index, :show]
 end
