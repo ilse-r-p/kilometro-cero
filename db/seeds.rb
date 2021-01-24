@@ -7,10 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Destroying database"
-# Dressing.destroy_all
-# Extra.destroy_all
-# Order.destroy_all
-# Topping.destroy_all
+Dressing.destroy_all
+Extra.destroy_all
+Order.destroy_all
+Topping.destroy_all
+Pan.destroy_all
 Hotdog.destroy_all
 User.destroy_all
 puts "Database cleaned"
@@ -57,4 +58,71 @@ chorizo_yucateco = Hotdog.create!(
   name: "Chorizo Yucateco",
   description: "Ingredientes: carne de cerdo, jugo de naranja agria, jugo de limón, cebolla morada, achiote, especias, hierbas, ajo fresco y habanero fresco",
   price: 60
+)
+
+blanco = Pan.create!(
+  name: "Pan blanco"
+)
+
+integral = Pan.create!(
+  name: "Pan integral"
+)
+
+cebolla_caramelizada = Topping.create!(
+  name: "Cebolla caramelizada"
+)
+
+poro_frito = Topping.create!(
+  name: "Poro frito"
+)
+
+pina_jalapeno = Topping.create!(
+  name: "Piña & jalapeño"
+)
+
+cebolla = Topping.create!(
+  name: "Cebolla"
+)
+
+champinones = Topping.create!(
+  name: "Champiñones"
+)
+
+tomate = Topping.create!(
+  name: "Tomate"
+)
+
+jalapenos = Topping.create!(
+  name: "Jalapeños"
+)
+
+mostaza_miel_agave = Dressing.create!(
+  name: "Mostaza y miel de agave"
+)
+
+ketchup = Dressing.create!(
+  name: "Ketchup"
+)
+
+tzatziki = Dressing.create!(
+  name: "Tzatziki"
+)
+
+mayonesa_casera = Dressing.create!(
+  name: "Mayonesa casera"
+)
+
+aguacate = Extra.create!(
+  name: "Aguacate",
+  price: 10
+)
+
+costra_queso = Extra.create!(
+  name: "Costra de queso",
+  price: 10
+)
+
+chimichurri = Extra.create!(
+  name: "Chimichurri",
+  price: 10
 )
