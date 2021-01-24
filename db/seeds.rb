@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Destroying database"
-Dressing.destroy_all
-Extra.destroy_all
-Order.destroy_all
-Topping.destroy_all
+# Dressing.destroy_all
+# Extra.destroy_all
+# Order.destroy_all
+# Topping.destroy_all
 Hotdog.destroy_all
 User.destroy_all
 puts "Database cleaned"
