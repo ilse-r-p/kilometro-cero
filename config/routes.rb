@@ -7,8 +7,7 @@ Rails.application.routes.draw do
     resources :dressings, only: [:index]
     resources :extras, only: [:index]
     resources :pans, only: [:index]
-    resources :refrescos, only: [:index]
-    resources :aguas, only: [:index]
   end
-  resources :orders, only: [:index, :show]
+  resources :refrescos, only: [:index]
+  resources :aguas, only: [:index]
 end

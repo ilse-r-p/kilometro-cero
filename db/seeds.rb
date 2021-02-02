@@ -11,18 +11,17 @@ Dressing.destroy_all
 Extra.destroy_all
 Agua.destroy_all
 Refresco.destroy_all
-Order.destroy_all
 Topping.destroy_all
 Pan.destroy_all
-Hotdog.destroy_all
 User.destroy_all
+Hotdog.destroy_all
 puts "Database cleaned"
 
 
 puts "Creating seeds"
 #review/question askers
 paloma = User.create!(
-  email: "palomapined@hotmail.com",
+  email: "paloma@kilometro.com",
   password: "password"
 )
 
@@ -39,7 +38,7 @@ british_sausage = Hotdog.create!(
 )
 
 pork_apple_whisky = Hotdog.create!(
-  name: "Pork apple & Whisky",
+  name: "Pork apple and Whisky",
   description: "Ingredientes: carne de cerdo, manzana verde, whisky Jim Beam, sal de mar, cebolla y especias",
   price: 60
 )
@@ -138,5 +137,4 @@ agua_jamaica = Agua.create!(
   name: "Agua de jamaica",
   price: 15
 )
-
 
